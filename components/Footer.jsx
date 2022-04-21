@@ -5,12 +5,14 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.cadL}>
+      <div className={styles.cardL}>
         <h1 className={styles.title}>AVOCADO CREATIVES</h1>
         <h1 className={styles.linkTitle}>
-          <Link href="/contact" passHref>
+          <Link href="/contact" className={styles.link} passHref>
+            <>
             <span className={styles.linkText}>WORK WITH US</span>
             <Image src='/img/link.png' width='40px' height='40px' alt='' />
+            </>
           </Link>
         </h1>
       </div>
