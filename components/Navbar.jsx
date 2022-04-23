@@ -5,11 +5,14 @@ import {useState} from 'react'
 const Navbar = () => {
   const [open, setOpen] = useState(false)
   return (
-    <div className={styles.container}>
-      <Link href='/'>Avocado</Link>
+    <div className={styles.container} onScroll={()=>setOpen(false)}>
+      <Link href='/'><span className={styles.logo}>Avocado</span></Link>
       <ul className={styles.list}>
         <li className={styles.listItem}>
           <Link href='/products/design'>Avocado</Link>
+        </li>
+        <li className={styles.listItem}>
+          <Link href='/blog/beranda'>Blog</Link>
         </li>
         <li className={styles.listItem}>
           <Link href='/products/development'>Development</Link>

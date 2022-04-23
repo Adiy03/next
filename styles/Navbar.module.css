@@ -1,22 +1,35 @@
 .container {
-  height: 50px;
-  background-color: black;
-  color: white;
+  height: 80px;
+  background-color: white;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px 100px;
   font-size: 18px;
-  position: relative;
+  position: fixed;
   overflow: hidden;
+  z-index: 1000;
+  width: 100%;
 }
 
+.logo{
+  font-size: 32px;
+  color: teal;
+  margin-left: -30px;
+  cursor: pointer;
+}
 
 .listItem {
   display: inline;
   margin-right: 30px;
   font-size: 18px;
   color: lightgray;
+}
+
+.listItem:hover{
+  color: teal;
+  transition: all 0.6s;
 }
 
 .title {
@@ -37,8 +50,16 @@
     padding: 0px 20px;
   }
 
+  .logo{
+    font-size: 32px;
+    color: teal;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+
   .list {
     display: none;
+    color: black;
   }
 
   .hamburger{
@@ -53,24 +74,24 @@
   .line{
     width: 100%;
     height: 3px;
-    background-color: white;
+    background-color: black;
   }
 
   .menu{
     position: fixed;
-    height: calc(100vh - 50px);
+    height: calc(100vh);
     width: 50vw;
     background-color: black;
-    top: 30px;
-    margin: 0;
-    padding: 0;
+    top: 0px;
+    margin-top: 0px;
+    padding: 100px;
     font-weight: bold;
     color: lightgrey;
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     z-index: 999;
     transition: all 0.6s ease;
   }

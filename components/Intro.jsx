@@ -8,7 +8,7 @@ const Intro = () => {
       <Circle backgroundColor="#01c686" top='-50vh' left='-50vh'/>
       <Circle backgroundColor="#01c686" right='-40vh'/>
       <div className={styles.card}>
-        <h1 className={styles.title}><span className={styles.brand}>AVOCADO <br /></span>Digital Product Agency</h1>
+        <h1 className={styles.title}><span className={styles.brand}>Adiy Media <br /></span>Digital Marketing Agency</h1>
         <p className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
         <button className={styles.button}>DISCOVER</button>
       </div>

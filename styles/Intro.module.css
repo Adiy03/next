@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: calc(100vh - 50px);
+  height: 100vh;
   display: flex;
   overflow: hidden;
   position: relative;
@@ -34,6 +34,7 @@
 
 .brand{
   color: green;
+  display: none;
 }
 
 .desc{
@@ -50,6 +51,7 @@
   padding: 12px;
   border-radius: 10px;
   cursor: pointer;
+  z-index: 998;
 }
 
 @media screen and (max-width:926px) {
@@ -63,6 +65,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 50px 16px 0px 16px;
   }
 
   .desc{
