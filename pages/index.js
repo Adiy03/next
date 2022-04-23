@@ -10,7 +10,7 @@ export default function Home({services}) {
     <div>
       <Head>
         <title>Ady Dev</title>
-        <meta name="description" content="the most handsome men alive" />
+        <meta name="description" content="easy digital marketing agency" />
         <meta name="google-site-verification" content="iivTrbKnVBEuglc6bJk-dWhRTVUD3eH6LviHrTkOjKs" />
       </Head>
       <Intro />
